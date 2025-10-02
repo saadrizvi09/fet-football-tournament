@@ -10,18 +10,18 @@ const Navbar = () => {
     }`;
 
   return (
-    <nav className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border shadow-sm">
+    <nav className=" margin-0 p-0 top-0 bg-card/95 backdrop-blur-sm border-b border-border shadow-sm">
                  <div className="w-[80vw]"></div>
                  <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
             <Trophy className="h-8 w-8 text-primary" />
-            <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <h1 className="text-sm font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               FET Football Tournament
             </h1>
           </div>
           
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <NavLink to="/" className={navLinkClass}>
               Matches
             </NavLink>

@@ -19,8 +19,8 @@ const topScorers: PlayerStat[] = [
   { name: "Saad Rizvi", team: "Electronics and Communication", value: 10 },
   { name: "Monis", team: "Civil ", value: 1 },
   { name: "Haris", team: "Electrical ", value: 1},
-  { name: "Hamza", team: "Chemical ", value: 1 },
-  { name: "Ashaiz", team: "Computer Science", value: 1 },
+  { name: "Hamza", team: "Computer ", value: 1 },
+  { name: "Ashaiz", team: "Electronics and Communication", value: 1 },
   { name: "Rehan", team: "Electrical ", value: 1 },
     { name: "Asjad", team: "Mechanical ", value: 1 }
 
@@ -28,11 +28,11 @@ const topScorers: PlayerStat[] = [
 ];
 
 const topAssisters: PlayerStat[] = [
-  { name: "Ayaan", team: "Computer Science", value: 1 },
+  { name: "Ayaan", team: "Computer ", value: 1 },
   { name: "Haris", team: "Civil Engineering", value: 1 },
   { name: "Ashaiz", team: "Electrical Engineering", value: 1 },
-  { name: "Saad Rizvi", team: "Electronics and Communication Engineering", value: 1 },
-  { name: "Monis", team: "Computer Science", value: 1 }
+  { name: "Saad Rizvi", team: "Electronics and Communication Engineering", value: 10 },
+  { name: "Monis", team: "Computer  ", value: 1 }
 ];
 
 const StatsTable = ({
