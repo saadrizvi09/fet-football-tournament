@@ -16,12 +16,12 @@ const recentMatches: Match[] = [
   {
     id: 1,
     date: "2025-09-28",
-    teamA: " CSE  ",
+    teamA: "CSE",
     teamB: "EE",
     scoreA: 1,
     scoreB: 1,
     goals: [
-      { scorer: "Hamza", assister: "Ayaan", team: "COMP " },
+      { scorer: "Hamza", assister: "Ayaan", team: "CSE" },
       { scorer: "Rehan", team: " EE" },
     ],
   },
@@ -62,11 +62,11 @@ const MatchCard = ({ match }: { match: Match }) => {
         <div className="flex flex-col text-center sm:items-center">
           <h3 className="font-bold text-lg mb-4 text-center py-2">{match.teamA}</h3>
           <div className="w-full space-y-2">
-            {match.goals
-              .filter((goal) => goal.team.includes(match.teamA.split(' ')[0]))
+          {match.goals
+             .filter((goal) => goal.team.substring(0, 2) === match.teamA.substring(0, 2))
               .map((goal, index) => (
                 <div
-                  key={`goal-a-${index}`}
+                  key={`goal-b-${index}`}
                   className="text-sm bg-muted/50 rounded-md px-3 py-2"
                 >
                   <div className="flex items-center gap-2">
@@ -98,8 +98,7 @@ const MatchCard = ({ match }: { match: Match }) => {
           <h3 className="font-bold text-lg mb-4 text-center px-6 py-2 ">{match.teamB}</h3>
           <div className="w-full space-y-2">
             {match.goals
-              .filter((goal) => goal.team.includes(match.teamB.split(' ')[0]))
-              .map((goal, index) => (
+.filter((goal) => goal.team.substring(0, 2) === match.teamB.substring(0, 2))              .map((goal, index) => (
                 <div
                   key={`goal-b-${index}`}
                   className="text-sm bg-muted/50 rounded-md px-3 py-2"
