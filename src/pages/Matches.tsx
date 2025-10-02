@@ -45,7 +45,9 @@ const recentMatches: Match[] = [
 
 const MatchCard = ({ match }: { match: Match }) => {
   return (
+    <>                       <div className="w-[120vw]"></div>
     <div className="bg-card rounded-lg shadow-lg p-4 sm:p-6 border border-border">
+
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <Calendar className="h-4 w-4" />
@@ -119,6 +121,8 @@ const MatchCard = ({ match }: { match: Match }) => {
         </div>
       </div>
     </div>
+    </>
+
   );
 };
 
