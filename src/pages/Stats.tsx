@@ -29,7 +29,7 @@ const topAssisters: PlayerStat[] = [
   { name: "Ayaan", team: "Computer Science", value: 1 },
   { name: "Haris", team: "Civil Engineering", value: 1 },
   { name: "Ashaiz", team: "Electrical Engineering", value: 1 },
-  { name: "Saad Rizvi", team: "Chemical Engineering", value: 1 },
+  { name: "Saad Rizvi", team: "Electronics and Communication Engineering", value: 1 },
   { name: "Monis", team: "Computer Science", value: 1 }
 ];
 
