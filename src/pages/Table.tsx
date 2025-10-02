@@ -29,6 +29,7 @@ const groupBData: TeamData[] = [
 ];
 
 const GroupTable = ({ title, data }: { title: string; data: TeamData[] }) => {
+  const sortedByPoints = [...data].sort((a, b) => b.points - a.points);
   return (
     <div className="stat-card animate-fade-in">
       <h2 className="text-2xl font-bold mb-4 text-primary">{title}</h2>
@@ -43,7 +44,7 @@ const GroupTable = ({ title, data }: { title: string; data: TeamData[] }) => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data.map((team, index) => (
+          {sortedByPoints.map((team, index) => (
             <TableRow key={team.team} className="table-row-hover">
               <TableCell className="font-medium">
                 <div className="flex items-center gap-2">

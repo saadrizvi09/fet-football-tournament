@@ -91,6 +91,8 @@ const StatsTable = ({
 };
 
 const StatsPage = () => {
+  const scorersSorted = [...topScorers].sort((a, b) => b.value - a.value);
+  const assistersSorted = [...topAssisters].sort((a, b) => b.value - a.value);
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -102,7 +104,7 @@ const StatsPage = () => {
           <div className="overflow-x-auto -mx-4 px-4">
             <StatsTable
             title="Top Scorers"
-            data={topScorers}
+            data={scorersSorted}
             icon={Target}
             valueLabel="Goals"
           />
@@ -110,7 +112,7 @@ const StatsPage = () => {
           <div className="overflow-x-auto -mx-4 px-4">
             <StatsTable
             title="Top Assisters"
-            data={topAssisters}
+            data={assistersSorted}
             icon={Users}
             valueLabel="Assists"
           />
