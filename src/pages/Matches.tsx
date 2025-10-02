@@ -22,7 +22,7 @@ const recentMatches: Match[] = [
     scoreB: 1,
     goals: [
       { scorer: "Hamza", assister: "Ayaan", team: "CSE" },
-      { scorer: "Rehan", team: " EE" },
+      { scorer: "Rehan", team: "EE" },
     ],
   },
   {
