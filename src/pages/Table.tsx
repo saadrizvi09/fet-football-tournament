@@ -17,15 +17,15 @@ interface TeamData {
 }
 
 const groupAData: TeamData[] = [
-  { team: "Computer Science", wins: 2, draws: 1, losses: 0, points: 7 },
-  { team: "Electrical Engineering", wins: 1, draws: 1, losses: 1, points: 4 },
-  { team: "Mechanical Engineering", wins: 0, draws: 1, losses: 2, points: 1 },
+  { team: "Computer Science", wins: 1, draws: 0, losses: 0, points: 3},
+  { team: "Civil Engineering", wins: 0, draws: 0, losses: 0, points: 0 },
+  { team: "Electrical Engineering", wins: 0, draws: 0, losses: 1, points: 0},
 ];
 
 const groupBData: TeamData[] = [
-  { team: "Civil Engineering", wins: 2, draws: 1, losses: 0, points: 7 },
-  { team: "Chemical Engineering", wins: 1, draws: 2, losses: 0, points: 5 },
-  { team: "Aerospace Engineering", wins: 0, draws: 0, losses: 3, points: 0 },
+  { team: "Electroncis adn Communication Engineering", wins: 1, draws: 0, losses: 0, points: 3},
+  { team: "Mechanical Engineering", wins: 0, draws: 0, losses: 1, points: 0 },
+  { team: "Aeronautics Engineering", wins: 0, draws: 0, losses: 0, points: 0 },
 ];
 
 const GroupTable = ({ title, data }: { title: string; data: TeamData[] }) => {

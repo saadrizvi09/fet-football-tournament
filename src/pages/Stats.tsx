@@ -16,29 +16,21 @@ interface PlayerStat {
 }
 
 const topScorers: PlayerStat[] = [
-  { name: "Ahmed Hassan", team: "Computer Science", value: 7 },
-  { name: "Mohamed Ali", team: "Civil Engineering", value: 6 },
-  { name: "Omar Khaled", team: "Electrical Engineering", value: 5 },
-  { name: "Youssef Ibrahim", team: "Chemical Engineering", value: 5 },
-  { name: "Karim Ahmed", team: "Computer Science", value: 4 },
-  { name: "Hassan Mohamed", team: "Civil Engineering", value: 4 },
-  { name: "Ali Mahmoud", team: "Mechanical Engineering", value: 3 },
-  { name: "Ibrahim Samy", team: "Electrical Engineering", value: 3 },
-  { name: "Mahmoud Adel", team: "Chemical Engineering", value: 2 },
-  { name: "Samy Hassan", team: "Aerospace Engineering", value: 2 },
+  { name: "Saad Rizvi", team: "Electronics and Communication", value: 10 },
+  { name: "Monis", team: "Civil ", value: 1 },
+  { name: "Haris", team: "Electrical ", value: 1},
+  { name: "Hamza", team: "Chemical ", value: 1 },
+  { name: "Ashaiz", team: "Computer Science", value: 1 },
+  { name: "Rehan", team: "Electrical ", value: 1 }
+
 ];
 
 const topAssisters: PlayerStat[] = [
-  { name: "Khaled Youssef", team: "Computer Science", value: 5 },
-  { name: "Adel Omar", team: "Civil Engineering", value: 4 },
-  { name: "Sami Karim", team: "Electrical Engineering", value: 4 },
-  { name: "Tarek Ali", team: "Chemical Engineering", value: 3 },
-  { name: "Waleed Ahmed", team: "Computer Science", value: 3 },
-  { name: "Amr Hassan", team: "Civil Engineering", value: 3 },
-  { name: "Hazem Mohamed", team: "Mechanical Engineering", value: 2 },
-  { name: "Ramy Ibrahim", team: "Electrical Engineering", value: 2 },
-  { name: "Nasser Mahmoud", team: "Chemical Engineering", value: 2 },
-  { name: "Fadi Samy", team: "Aerospace Engineering", value: 1 },
+  { name: "Ayaan", team: "Computer Science", value: 1 },
+  { name: "Haris", team: "Civil Engineering", value: 1 },
+  { name: "Ashaiz", team: "Electrical Engineering", value: 1 },
+  { name: "Saad Rizvi", team: "Chemical Engineering", value: 1 },
+  { name: "Monis", team: "Computer Science", value: 1 }
 ];
 
 const StatsTable = ({

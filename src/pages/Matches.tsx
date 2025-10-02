@@ -19,99 +19,44 @@ const recentMatches: Match[] = [
     date: "2025-09-28",
     teamA: "Computer Science",
     teamB: "Electrical Engineering",
-    scoreA: 3,
-    scoreB: 2,
+    scoreA: 1,
+    scoreB: 1,
     scorers: [
-      { player: "Ahmed Hassan", team: "Computer Science" },
-      { player: "Karim Ahmed", team: "Computer Science" },
-      { player: "Ahmed Hassan", team: "Computer Science" },
-      { player: "Omar Khaled", team: "Electrical Engineering" },
-      { player: "Ibrahim Samy", team: "Electrical Engineering" },
+      { player: "Hamza", team: "Computer Science " },
+            { player: "Rehan", team: "Electrical" },
+
+      
     ],
     assisters: [
-      { player: "Khaled Youssef", team: "Computer Science" },
-      { player: "Waleed Ahmed", team: "Computer Science" },
-      { player: "Khaled Youssef", team: "Computer Science" },
-      { player: "Sami Karim", team: "Electrical Engineering" },
-      { player: "Ramy Ibrahim", team: "Electrical Engineering" },
+      { player: "Ayaan", team: "Computer Science" },
+      
     ],
   },
   {
     id: 2,
     date: "2025-09-27",
-    teamA: "Civil Engineering",
-    teamB: "Chemical Engineering",
-    scoreA: 2,
-    scoreB: 2,
-    scorers: [
-      { player: "Mohamed Ali", team: "Civil Engineering" },
-      { player: "Hassan Mohamed", team: "Civil Engineering" },
-      { player: "Youssef Ibrahim", team: "Chemical Engineering" },
-      { player: "Mahmoud Adel", team: "Chemical Engineering" },
-    ],
-    assisters: [
-      { player: "Adel Omar", team: "Civil Engineering" },
-      { player: "Amr Hassan", team: "Civil Engineering" },
-      { player: "Tarek Ali", team: "Chemical Engineering" },
-      { player: "Nasser Mahmoud", team: "Chemical Engineering" },
-    ],
-  },
-  {
-    id: 3,
-    date: "2025-09-26",
     teamA: "Mechanical Engineering",
-    teamB: "Aerospace Engineering",
-    scoreA: 2,
-    scoreB: 1,
+    teamB: "Electronics and Communication ",
+    scoreA: 1,
+    scoreB: 5,
     scorers: [
-      { player: "Ali Mahmoud", team: "Mechanical Engineering" },
-      { player: "Ali Mahmoud", team: "Mechanical Engineering" },
-      { player: "Samy Hassan", team: "Aerospace Engineering" },
+      { player: "Saad Rizvi", team: "Electronics and Communication " },
+      { player: "Haris", team: "Electronics and Communication " },
+      { player: "Monis Khan", team: "Electronics and Communication " },
+            { player: "Saad Rizvi", team: "Electronics and Communication " },
+                      { player: "Asjad", team: "Mechanical " },
+
+
+      { player: "Ashaiz", team: "Electronics and Communication Engineering" },
     ],
     assisters: [
-      { player: "Hazem Mohamed", team: "Mechanical Engineering" },
-      { player: "Hazem Mohamed", team: "Mechanical Engineering" },
-      { player: "Fadi Samy", team: "Aerospace Engineering" },
+      { player: "Haris", team: "Electronics and Communication Engineering" },
+      { player: "Saad Rizvi", team: "Electronics and Communication Engineering" },
+      { player: "Ashaiz", team: "Electronics and Communication Engineering" },
     ],
-  },
-  {
-    id: 4,
-    date: "2025-09-25",
-    teamA: "Computer Science",
-    teamB: "Mechanical Engineering",
-    scoreA: 4,
-    scoreB: 0,
-    scorers: [
-      { player: "Ahmed Hassan", team: "Computer Science" },
-      { player: "Ahmed Hassan", team: "Computer Science" },
-      { player: "Karim Ahmed", team: "Computer Science" },
-      { player: "Karim Ahmed", team: "Computer Science" },
-    ],
-    assisters: [
-      { player: "Khaled Youssef", team: "Computer Science" },
-      { player: "Waleed Ahmed", team: "Computer Science" },
-      { player: "Khaled Youssef", team: "Computer Science" },
-      { player: "Waleed Ahmed", team: "Computer Science" },
-    ],
-  },
-  {
-    id: 5,
-    date: "2025-09-24",
-    teamA: "Civil Engineering",
-    teamB: "Aerospace Engineering",
-    scoreA: 3,
-    scoreB: 0,
-    scorers: [
-      { player: "Mohamed Ali", team: "Civil Engineering" },
-      { player: "Mohamed Ali", team: "Civil Engineering" },
-      { player: "Hassan Mohamed", team: "Civil Engineering" },
-    ],
-    assisters: [
-      { player: "Adel Omar", team: "Civil Engineering" },
-      { player: "Amr Hassan", team: "Civil Engineering" },
-      { player: "Adel Omar", team: "Civil Engineering" },
-    ],
-  },
+ 
+  }
+ 
 ];
 
 const MatchCard = ({ match }: { match: Match }) => {
