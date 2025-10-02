@@ -59,8 +59,8 @@ const MatchCard = ({ match }: { match: Match }) => {
 
       <div className="grid grid-cols-3 gap-3 sm:gap-4 items-start">
         {/* Team A Section */}
-        <div className="flex flex-col items-start sm:items-center">
-          <h3 className="font-bold text-lg mb-4 text-center">{match.teamA}</h3>
+        <div className="flex flex-col text-center sm:items-center">
+          <h3 className="font-bold text-lg mb-4 text-center py-2">{match.teamA}</h3>
           <div className="w-full space-y-2">
             {match.goals
               .filter((goal) => goal.team.includes(match.teamA.split(' ')[0]))
@@ -85,7 +85,7 @@ const MatchCard = ({ match }: { match: Match }) => {
         </div>
 
         {/* Score Section */}
-        <div className="flex items-center justify-center py-2">
+        <div className="flex items-center justify-center ">
           <div className="flex items-center gap-4">
             <span className="text-3xl sm:text-4xl font-bold text-primary">{match.scoreA}</span>
             <span className="text-xl sm:text-2xl text-muted-foreground">-</span>
@@ -95,7 +95,7 @@ const MatchCard = ({ match }: { match: Match }) => {
 
         {/* Team B Section */}
         <div className="flex flex-col items-start sm:items-center">
-          <h3 className="font-bold text-lg mb-4 text-center">{match.teamB}</h3>
+          <h3 className="font-bold text-lg mb-4 text-center px-6 py-2 ">{match.teamB}</h3>
           <div className="w-full space-y-2">
             {match.goals
               .filter((goal) => goal.team.includes(match.teamB.split(' ')[0]))

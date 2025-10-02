@@ -17,7 +17,7 @@ interface TeamData {
 }
 
 const groupAData: TeamData[] = [
-  { team: "Computer ", wins: 1, draws: 0, losses: 0, points: 3},
+  { team: "Computer Engineering", wins: 1, draws: 0, losses: 0, points: 3},
   { team: "Civil Engineering", wins: 0, draws: 0, losses: 0, points: 0 },
   { team: "Electrical Engineering", wins: 0, draws: 0, losses: 1, points: 0},
 ];
