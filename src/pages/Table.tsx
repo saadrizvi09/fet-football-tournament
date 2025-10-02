@@ -23,7 +23,7 @@ const groupAData: TeamData[] = [
 ];
 
 const groupBData: TeamData[] = [
-  { team: "Electroncis adn Communication Engineering", wins: 1, draws: 0, losses: 0, points: 3},
+  { team: "Electroncis and Communication Engineering", wins: 1, draws: 0, losses: 0, points: 3},
   { team: "Mechanical Engineering", wins: 0, draws: 0, losses: 1, points: 0 },
   { team: "Aeronautics Engineering", wins: 0, draws: 0, losses: 0, points: 0 },
 ];
