@@ -13,19 +13,20 @@ interface TeamData {
   wins: number;
   draws: number;
   losses: number;
+  GD: number;
   points: number;
 }
 
 const groupAData: TeamData[] = [
-  { team: "Computer Engineering", wins: 1, draws: 0, losses: 0, points: 3},
-  { team: "Civil Engineering", wins: 0, draws: 0, losses: 0, points: 0 },
-  { team: "Electrical Engineering", wins: 0, draws: 0, losses: 1, points: 0},
+  { team: "Computer Engineering", wins: 1, draws: 0, losses: 0, GD:0, points: 3},
+  { team: "Civil Engineering", wins: 0, draws: 0, losses: 0,GD:0, points: 0 },
+  { team: "Electrical Engineering", wins: 0, draws: 0, losses: 1,GD:0, points: 0},
 ];
 
 const groupBData: TeamData[] = [
-  { team: "Electroncis and Communication Engineering", wins: 1, draws: 0, losses: 0, points: 3},
-  { team: "Mechanical Engineering", wins: 0, draws: 0, losses: 1, points: 0 },
-  { team: "Aeronautics Engineering", wins: 0, draws: 0, losses: 0, points: 0 },
+  { team: "Electroncis and Communication Engineering", wins: 1, draws: 0, losses: 0, GD:0, points: 3},
+  { team: "Mechanical Engineering", wins: 0, draws: 0, losses: 1,GD:0, points: 0 },
+  { team: "Aeronautics Engineering", wins: 0, draws: 0, losses: 0,GD:0, points: 0 },
 ];
 
 const GroupTable = ({ title, data }: { title: string; data: TeamData[] }) => {
@@ -40,6 +41,7 @@ const GroupTable = ({ title, data }: { title: string; data: TeamData[] }) => {
             <TableHead className="text-center font-bold">W</TableHead>
             <TableHead className="text-center font-bold">D</TableHead>
             <TableHead className="text-center font-bold">L</TableHead>
+            <TableHead className="text-center font-bold">GD</TableHead>
             <TableHead className="text-center font-bold">Points</TableHead>
           </TableRow>
         </TableHeader>
@@ -57,6 +59,7 @@ const GroupTable = ({ title, data }: { title: string; data: TeamData[] }) => {
               <TableCell className="text-center">{team.wins}</TableCell>
               <TableCell className="text-center">{team.draws}</TableCell>
               <TableCell className="text-center">{team.losses}</TableCell>
+              <TableCell className="text-center">{team.GD}</TableCell>
               <TableCell className="text-center">
                 <span className="inline-flex items-center justify-center rounded-full bg-primary px-3 py-1 text-sm font-bold text-primary-foreground">
                   {team.points}
