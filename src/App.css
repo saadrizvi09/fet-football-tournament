@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* Let container utilities control layout; remove hard max-width and padding for mobile */
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .logo {

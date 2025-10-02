@@ -45,7 +45,7 @@ const recentMatches: Match[] = [
 
 const MatchCard = ({ match }: { match: Match }) => {
   return (
-    <div className="bg-card rounded-lg shadow-lg p-6 border border-border">
+    <div className="bg-card rounded-lg shadow-lg p-4 sm:p-6 border border-border">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <Calendar className="h-4 w-4" />
@@ -56,9 +56,9 @@ const MatchCard = ({ match }: { match: Match }) => {
         </Badge>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 items-start">
+      <div className="grid grid-cols-3 gap-3 sm:gap-4 items-start">
         {/* Team A Section */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-start sm:items-center">
           <h3 className="font-bold text-lg mb-4 text-center">{match.teamA}</h3>
           <div className="w-full space-y-2">
             {match.goals
@@ -84,16 +84,16 @@ const MatchCard = ({ match }: { match: Match }) => {
         </div>
 
         {/* Score Section */}
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center py-2">
           <div className="flex items-center gap-4">
-            <span className="text-4xl font-bold text-primary">{match.scoreA}</span>
-            <span className="text-2xl text-muted-foreground">-</span>
-            <span className="text-4xl font-bold text-primary">{match.scoreB}</span>
+            <span className="text-3xl sm:text-4xl font-bold text-primary">{match.scoreA}</span>
+            <span className="text-xl sm:text-2xl text-muted-foreground">-</span>
+            <span className="text-3xl sm:text-4xl font-bold text-primary">{match.scoreB}</span>
           </div>
         </div>
 
         {/* Team B Section */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-start sm:items-center">
           <h3 className="font-bold text-lg mb-4 text-center">{match.teamB}</h3>
           <div className="w-full space-y-2">
             {match.goals
