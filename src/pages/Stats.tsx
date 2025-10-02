@@ -22,6 +22,8 @@ const topScorers: PlayerStat[] = [
   { name: "Hamza", team: "Chemical ", value: 1 },
   { name: "Ashaiz", team: "Computer Science", value: 1 },
   { name: "Rehan", team: "Electrical ", value: 1 }
+    { name: "Asjad", team: "Mechanical ", value: 1 }
+
 
 ];
 
