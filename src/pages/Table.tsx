@@ -74,12 +74,16 @@ const TablePage = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           Tournament Standings
         </h1>
-        <div className="grid md:grid-cols-2 gap-8">
-          <GroupTable title="Group A" data={groupAData} />
-          <GroupTable title="Group B" data={groupBData} />
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+          <div className="overflow-x-auto -mx-4 px-4">
+            <GroupTable title="Group A" data={groupAData} />
+          </div>
+          <div className="overflow-x-auto -mx-4 px-4">
+            <GroupTable title="Group B" data={groupBData} />
+          </div>
         </div>
       </main>
     </div>

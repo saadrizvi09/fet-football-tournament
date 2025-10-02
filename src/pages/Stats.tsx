@@ -95,22 +95,26 @@ const StatsPage = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           Player Statistics
         </h1>
-        <div className="grid md:grid-cols-2 gap-8">
-          <StatsTable
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+          <div className="overflow-x-auto -mx-4 px-4">
+            <StatsTable
             title="Top Scorers"
             data={topScorers}
             icon={Target}
             valueLabel="Goals"
           />
-          <StatsTable
+          </div>
+          <div className="overflow-x-auto -mx-4 px-4">
+            <StatsTable
             title="Top Assisters"
             data={topAssisters}
             icon={Users}
             valueLabel="Assists"
           />
+          </div>
         </div>
       </main>
     </div>
